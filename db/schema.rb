@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20121019152334) do
 
   create_table "images", :force => true do |t|
     t.string   "url"
-    t.string   "cat_id"
+    t.integer   "cat_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
