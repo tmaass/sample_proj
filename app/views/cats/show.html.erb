@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cat.name %>
+  <br>
+  <% @cat.images.each do |image| %>
+  	<%= image_tag image.url, :size => "512x384" %>
+  	<br>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_cat_path(@cat) %> |
+<%= link_to 'Back', cats_path %>
